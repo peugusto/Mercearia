@@ -1,0 +1,25 @@
+.navBar{
+    width: 100%;
+    height: 8rem;
+    background-color: #5a0286;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+}
+.list , img{
+    width: 4rem;
+}
+.list{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    color: whitesmoke;
+}
+.list li{
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+.body{
+    background-color: #FAF9F6;
+}
