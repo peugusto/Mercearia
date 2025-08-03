@@ -20,6 +20,11 @@
     margin-left: 20px;
     text-align: center;
 }
-.body{
-    background-color: #FAF9F6;
+
+input , textarea{
+    padding: 9px;
+    border-radius: 4px;
+    border: 1px solid black;
+    outline: none;
+    resize: none;
 }

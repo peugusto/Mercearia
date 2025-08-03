@@ -7,7 +7,8 @@ function App() {
   const [currentDash, openDash ] = useState("");
   
   const sections = {
-    cadastroFiado: <ModalCadastroFiado/> 
+    cadastroFiado: <ModalCadastroFiado closeCadastroFiado={openDash}/> ,
+    exit : null,
   }
   
   return (
@@ -15,6 +16,7 @@ function App() {
     <NavBar handleMain={openDash}/>
     <main>
     {sections[currentDash] || null}
+    
     </main>
     </>
   )

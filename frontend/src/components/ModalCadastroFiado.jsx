@@ -1,18 +1,28 @@
-export default function ModalCadastroFiado({isOpen}){
-    const MODAL_STYLE = {
-        position: 'fixed',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%,-50%)',
-        padding: '150px',
-        borderRadius: '4px',
-        color: 'black',
-        backgroundColor: '#fff'
-    }
+import { useForm } from "react-hook-form";
+import '../css/Modal.css'
+export default function ModalCadastroFiado({closeCadastroFiado}){
     
     return(
-        <div style={MODAL_STYLE}>
+        <div className="modal">
             <h1>Cadastro de Fiado</h1>
+            
+            <label>Nome</label>
+            <input 
+            type="text" 
+            placeholder="Nome..."/>
+            
+            <label>Telefone</label>
+            <input 
+            type="text"
+            placeholder="Telefone..." />
+
+            <label>Observação</label>
+            <textarea id="obs"></textarea>
+            <div className="align">
+            <button onClick={() => closeCadastroFiado("exit")}>Cancelar</button>
+            <button>Cadastrar</button>
+            </div>
+            
         </div>
     )
 }   
